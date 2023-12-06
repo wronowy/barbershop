@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Sicarios. | Your Barber |</title>
+
+    <!-- @include 'styles.kit' -->
+
+</head>
+
+<body>
+
+
+    <!-- @include 'nav.kit' -->
+
+
+    <header class="home">
+        <div class="title">
+            <div class="titlebox">
+                <h1 class="title title-mobile">The one and only proper Barbershop</h1>
+
+                <div class="icon-down">
+                    <a href="#aboutus">
+                        <box-icon name='chevron-down' animation='tada' color="red" class="down"></box-icon></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+    <main>
+        <section id="aboutus">
+            <div class="hero-img">
+                <div class="hero-shadow"></div>
+
+                <div class="icon-up">
+
+
+                    <h2 class="title">
+                       O nas
+                    </h2>
+                    <div class="owners-info">
+                        <p class="owners-info">
+                            Two pals, united by a shared passion, run a vibrant barbershop where their craft transforms
+                            haircuts into memorable experiences.</p>
+                    </div>
+                    <div class="cards">
+
+                        <div class="card one">
+                            <button class="question"><i class='bx bx-question-mark'></i></button>
+                            <div class="card-text">
+
+                                <h3>co-owner</h3>
+                                <p class="name">Jan Kowalski</p>
+                                <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
+                                    cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
+                                    voluptatibus?</p>
+                            </div>
+                        </div>
+
+                        <div class="card two">
+                            <button class="question"><i class='bx bx-question-mark'></i></button>
+                            <div class="card-text">
+
+                                <h3>co-owner</h3>
+                                <p class="name">Piotr Nowak</p>
+                                <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
+                                    cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
+                                    voluptatibus?</p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+        </section>
+
+    <section id="contact">
+
+       
+        <div class=" contact-container">
+            <p class="map-title">Znajdź nas:</p>
+            <div class="map">
+                
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40067.34592861961!2d15.837652948632808!3d51.12305060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f17b9a82193ab%3A0x91542e554198f23b!2sPablo%20Barber%20Shop!5e0!3m2!1spl!2spl!4v1701680497575!5m2!1spl!2spl"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  ></iframe>
+            </div>
+
+            <div class="contact-form-box">
+                <form action="mail.php" method="post" class="contact-form">
+                    <div class="contact-box">
+                        <label for="name">Imię:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="contact-box">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="contact-box">
+                        <label for="name">Wiadomość:</label>
+                        <textarea name="msg" id="msg" required></textarea>
+                    </div>
+                    <button class="send">Send</button>
+                </form>
+            </div>
+            <div class="footer-box">
+
+              
+            </div>
+            <p class="msg-status"></p>
+         
+              
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+</main>
+<!-- @include 'footer.kit' -->
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="/dist/js/script.min.js"></script>
+</body>
+
+</html>

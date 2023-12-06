@@ -1,0 +1,519 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bgcolor: radial-gradient(circle, hsla(39, 44%, 70%, 1) 0%, hsla(28, 95%, 71%, 1) 96%);
+	--darkcolor: rgb(8, 7, 7);
+	--txtcolor: rgb(20, 235, 128);
+	--firstcolor: rgb(29, 126, 10);
+	--linkcolor: rgb(255, 255, 255);
+	--shadowcolor: rgba(21, 21, 21, 0.266);
+	--activelink: rgb(255, 162, 0);
+	--white: rgb(255, 255, 255);
+}
+
+html {
+	scroll-behavior: smooth;
+	font-weight: normal;
+	width: 100%;
+
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Anton', sans-serif;
+}
+
+header {
+	display: flex;
+
+	height: 100vh;
+	width: 100%;
+	background-image: url('../img/barber-big.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+// nav
+
+.navbar {
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 3rem;
+	height: 3rem;
+	width: 100%;
+}
+.navbar a {
+	text-decoration: none;
+	color: var(--txtcolor);
+	transition:color .3s;
+}
+.navbar a:hover {
+	color: var(--activelink);
+	
+}
+
+.navbar .nav-links ul {
+	display: flex;
+	color: var(--txtcolor);
+	font-weight: bold;
+	font-size: 2.1rem;
+	padding-bottom: 1rem;
+
+	list-style: none;
+	filter: blur(0.02rem);
+}
+.navbar .nav-links ul li {
+	margin: 1rem 3rem;
+}
+.navbar .nav-links ul li.active a {
+	color: var(--activelink);
+	font-weight: 600;
+}
+.navbar .menu-hamburger {
+	display: none;
+	position: absolute;
+	top: 3rem;
+	width: 5rem;
+	left: 1rem;
+}
+.mobile-menu {
+	text-align: center;
+	margin-left: 0;
+}
+.navbar .logo-co {
+	position: absolute;
+	top: 0;
+	left: 5%;
+	height: 10rem;
+	width: 15rem;
+}
+
+@media (max-width: 764px) {
+	.titlebox {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		.title-mobile {
+			text-align: center;
+			font-size: 2.7rem;
+			width: 100%;
+		}
+	}
+
+	#aboutus {
+		.hero-text {
+			display: flex;
+			flex-direction: column;
+			.text-img {
+				position: relative;
+				width: 90%;
+				.owner-photo {
+					height: 12rem;
+					width: 10rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 900px) {
+	header {
+		background-size: cover;
+		background-position: center;
+	}
+	.navbar {
+		padding: 0;
+	}
+	.navbar img {
+		position: absolute;
+		// margin-left: 5rem;
+		top: 1rem;
+		left: 1rem;
+	}
+	.navbar .logo-co {
+		width: 10rem;
+		height: 10rem;
+	}
+	.navbar .menu-hamburger {
+		display: block;
+		position: sticky;
+		margin-top: 5rem;
+		margin-right: 5rem;
+	}
+	.nav-links.mobile-menu {
+		margin-left: 0;
+	}
+	.nav-links {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(1rem);
+		margin-left: -100%;
+		transition: all 0.5s ease;
+		font-size: 2rem;
+	}
+	.nav-links ul {
+		display: flex;
+		flex-direction: column;
+	}
+	.navbar .nav-links ul li {
+		margin: 2.5rem 0;
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 960px) {
+	.navbar .logo-co {
+		width: 10rem;
+		height: 10rem;
+	}
+}
+
+@media (max-width: 1300px) {
+	.nav-links ul li a {
+		font-size: 1.8rem;
+	}
+	.title {
+		text-align: center;
+	}
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.titlebox {
+	display: flex;
+	justify-content: center;
+
+	text-align: center;
+	// width: 80vw;
+	height: 100%;
+}
+.icon-down {
+	align-self: flex-end;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+	padding: 1rem;
+	cursor: pointer;
+	.down {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+h1,
+h2 {
+	font-size: 4.7rem;
+	color: var(--activelink);
+	display: flex;
+	// position: relative;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-weight: 400;
+	text-shadow: 1px 10px 23px rgba(0, 0, 0, 0.62);
+}
+h1 {
+	margin: 5rem;
+}
+
+// about us
+
+.hero-img {
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/barbershop-4762345_1280.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+}
+.hero-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	z-index: -10;
+}
+.titlebox {
+	display: flex;
+	width: 100%;
+}
+.title {
+	margin-top: 6rem;
+	font-size: 5rem;
+	color: var(--activelink);
+}
+.owners-info {
+	margin: 1rem 1rem;
+	text-align: center;
+
+	font-size: 1.4rem;
+	color: var(--txtcolor);
+	text-shadow: 1px 10px 23px rgba(0, 0, 0, 0.62);
+}
+
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	margin: 0 auto;
+}
+.card {
+	position: relative;
+	margin: 1rem;
+	height: 25rem;
+	width: 28rem;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 6px 6px 10px rgba(232, 127, 7, 0.8);
+}
+.one {
+	background-image: url('../img/man-6692571_1280.jpg');
+}
+.two {
+	background-image: url('../img/beard-4136705_1280.jpg');
+}
+button.question {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	padding: 2rem;
+	background: none;
+	border: none;
+	color: var(--txtcolor);
+	font-size: 4rem;
+	text-shadow: 2px 2px 10px rgba(8, 97, 20, 0.704);
+	cursor: crosshair;
+	z-index: 10;
+}
+
+button.question:hover ~ .card-text {
+	clip-path: circle(120% at 50% 90%);
+	box-shadow: 6px 6px 10px rgba(232, 7, 29, 0.8);
+}
+.card-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5rem 3rempx;
+	background-color: rgba(0, 0, 0, 0.86);
+	color: var(--white);
+	clip-path: circle(0 at 50% 90%);
+	transition: clip-path 0.8s;
+}
+h3 {
+	color: var(--firstcolor);
+	text-transform: uppercase;
+}
+.name {
+	font-size: 2rem;
+	margin-bottom: 30px;
+	color: var(--activelink);
+}
+// contact
+@media (max-width: 764px) {
+	.contact-form-box {
+		display: flex;
+		// flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		label {
+			padding: 0.5rem;
+		}
+	}
+}
+.contact-container {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background-image: url('../img/barber-1017457_1920.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.contact-form-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.contact-form {
+	// margin-top: 1rem;
+
+	width: 20rem;
+	background-color: var(--DarkWhiteBcg);
+	/* border-radius: 24px; */
+	box-shadow: var(--shadow);
+	border-radius: 0.3rem;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0;
+}
+.contact-form label {
+	color: var(--activelink);
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button.send {
+	padding: 0.6rem;
+	font-size: 0.9rem;
+	font-family: inherit;
+	border-style: none;
+	border-radius: 0.3rem;
+	box-shadow: var(--shadow);
+}
+.contact-form textarea {
+	resize: vertical;
+}
+.contact-form button.send {
+	padding: 1rem;
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.5s;
+}
+.contact-form button.send:hover {
+	color: var(--white);
+	background-color: var(--firstcolor);
+}
+.msg-status {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	width: 200px;
+	height: 2rem;
+	border-radius: 0.3rem;
+	font-size: 1rem;
+}
+.success {
+	display: flex;
+	background-color: hsl(143, 83%, 55%);
+}
+.error {
+	display: flex;
+	background-color: hsl(9, 100%, 65%);
+}
+.email-address {
+	margin-bottom: 4rem;
+	font-size: 1rem;
+}
+button.send {
+	width: 6rem;
+	height: 2rem;
+}
+// .contact img {
+// 	padding-top: 2rem;
+// 	position: relative;
+// 	width: 2rem;
+// 	margin: 1rem;
+// }
+
+.map {
+	display: flex;
+	justify-content: center;
+	// width: 5rem;
+	// height: 5rem;
+}
+.map-title {
+	display: flex;
+	font-size: 2rem;
+	color: var(--activelink);
+}
+@media (max-width: 1300px) {
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
+		.map-title {
+			position: relative;
+			margin-top: 0.5rem;
+			font-size: 1.5rem;
+		}
+		.map {
+			justify-content: center;
+			align-items: center;
+			margin: 2rem auto;
+		}
+	}
+}
+
+// .footer {
+
+// 	width: 100%;
+// 	height: 2rem;
+// }
+// .footer-icon-box {
+// 	background-color: var(--linkcolor);
+// 	position: absolute;
+// 	height: 1.5rem;
+// 	display: flex;
+// 	justify-content: space-around;
+// 	width: 100%;
+// }
+.email-address {
+	font-size: 1rem;
+	color: var(--activelink);
+}
+
+
+.boxicon-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 3rem;
+	width: 100%;
+	list-style: none;
+	background-color: var(--shadowcolor);
+}
+img.corvus-logo {
+	width: 3rem;
+	height: 3rem;
+}
+
+// display: flex;
+
+// margin-left: -100%;
+// transition: all 0.5s ease;
+// font-size: 2rem;
