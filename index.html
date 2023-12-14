@@ -6,57 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Sicarios. | Your Barber |</title>
 
-    <link rel="stylesheet" href="./dist/css/style.min.css">
+    
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="/dist/css/style.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
-        rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+
+
+
+    <nav class="navbar">
+
+    <div class="nav-links">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#aboutus" class="nav-link">O nas</a></li>
+            <li class="nav-item"><a href="#offers" class="nav-link">Oferta</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+    </div>
+    <img src="./dist/img/menu.png" alt="menu icon" class="menu-hamburger">
+</nav>
 
 </head>
 
 <body>
-    <nav class="navbar">
+
+    <header id="home">
+
         <div class="logo"><img src="./dist/img/sicario.svg" alt="" class="logo-co"></div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutus">O nas</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
+        <div class="titlebox">
+            <h1 class="head-title title-mobile">The one and only proper Barbershop</h1>
+
         </div>
-        <img src="./dist/img/menu.png" alt="menu icon" class="menu-hamburger">
-    </nav>
-    <header class="home">
-        <div class="title">
-            <div class="titlebox">
-                <h1 class="title title-mobile">The one and only proper Barbershop</h1>
-                <div class="icon-down">
-                    <a href="#aboutus">
-                        <box-icon name='chevron-down' animation='tada' color="red" class="down"></box-icon></a>
-                </div>
-            </div>
-        </div>
+
     </header>
     <main>
         <section id="aboutus">
             <div class="hero-img">
                 <div class="hero-shadow"></div>
+
                 <div class="icon-up">
-                    <h2 class="title">
+                    <h2 class="head-title">
                         O nas
                     </h2>
                     <div class="owners-info">
                         <p class="owners-info">
-                            Two pals, united by a shared passion, run a vibrant barbershop where their craft transforms
-                            haircuts into memorable experiences.</p>
+                            Dwóch przyjaciół, połączonych wspólną pasją, prowadzi tętniący życiem salon fryzjerski, w
+                            którym ich rzemiosło przekształca strzyżenie w niezapomniane przeżycia.</p>
                     </div>
                     <div class="cards">
+
                         <div class="card one">
                             <button class="question"><i class='bx bx-question-mark'></i></button>
                             <div class="card-text">
+
                                 <h3>co-owner</h3>
                                 <p class="name">Jan Kowalski</p>
                                 <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
@@ -64,31 +71,103 @@
                                     voluptatibus?</p>
                             </div>
                         </div>
+
                         <div class="card two">
                             <button class="question"><i class='bx bx-question-mark'></i></button>
                             <div class="card-text">
+
                                 <h3>co-owner</h3>
                                 <p class="name">Piotr Nowak</p>
                                 <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
                                     cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
                                     voluptatibus?</p>
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
         </section>
+        <section id="offers">
+            <h2 class="head-title">Oferty</h2>
+            <div class="offers-container">
 
-        <section id="contact">
+                <div class="offer first">
+                    <div class="offer-bg"></div>
+                    <div class="offer-content">
 
-            <div class=" contact-container">
-                <p class="map-title">Znajdź nas:</p>
-                <div class="map">
+                        <h3>Trymowanie Brody</h3>
+                        <p>
+                            Nasze doświadczone ekipy barberów specjalizują się w profesjonalnym trymowaniu brody.
+                            Oferujemy
+                            różnorodne
+                            style i
+                            techniki dopasowane do Twoich preferencji.
+                        </p>
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40067.34592861961!2d15.837652948632808!3d51.12305060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f17b9a82193ab%3A0x91542e554198f23b!2sPablo%20Barber%20Shop!5e0!3m2!1spl!2spl!4v1701680497575!5m2!1spl!2spl"
-                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
                 </div>
 
+                <div class="offer second">
+
+                    <div class="offer-bg"></div>
+                    <div class="offer-content">
+                        <h3>Golenie Twarzy i Głowy Brzytwą</h3>
+                        <p>
+                            Pozwól nam zadbać o Twój wygląd poprzez tradycyjne golenie twarzy i głowy przy użyciu ostrej
+                            brzytwy. Nasze
+                            usługi
+                            obejmują staranne przygotowanie skóry, golenie oraz końcową pielęgnację.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offer third">
+
+                    <div class="offer-bg"></div>
+                    <div class="offer-content">
+                        <h3>Relaks przy Wydarzeniach Sportowych</h3>
+                        <p>
+                            Obejrzyj swoje ulubione wydarzenia sportowe na naszych telewizorach o najwyższej jakości.
+                            Zapewniamy
+                            komfortowe
+                            miejsca siedzące i przyjazną atmosferę dla fanów sportu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offer fourth">
+
+                    <div class="offer-bg"></div>
+                    <div class="offer-content">
+                        <h3>Degustacja Whisky i Piwa</h3>
+                        <p>
+                            Przyjdź i skosztuj różnych rodzajów whisky oraz zimnego piwa. Nasze menu obejmuje wyjątkowe
+                            marki,
+                            które
+                            zadowolą
+                            nawet najbardziej wymagających koneserów.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contact">
+
+            <div class="contact-content">
+                <p class="down-title">Znajdź nas:</p>
+                <div class="map">
+
+
+                    <iframe class="responsive-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40067.34592861961!2d15.837652948632808!3d51.12305060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f17b9a82193ab%3A0x91542e554198f23b!2sPablo%20Barber%20Shop!5e0!3m2!1spl!2spl!4v1701680497575!5m2!1spl!2spl"
+                        loading="lazy"></iframe>
+                </div>
+                <p class="down-title">Umów się:</p>
                 <div class="contact-form-box">
                     <form action="mail.php" method="post" class="contact-form">
                         <div class="contact-box">
@@ -106,40 +185,39 @@
                         <button class="send">Send</button>
                     </form>
                 </div>
-                <div class="footer-box">
 
-                </div>
                 <p class="msg-status"></p>
 
             </div>
+            <footer class="footer">
+
+    <ul class="boxicon-list">
+        <li>
+            <a href="#"><box-icon type='logo' name='facebook-circle' color="yellow"></box-icon></a>
+        </li>
+        <li>
+            <a href="#"><box-icon name='linkedin-square' type='logo' color="yellow"></box-icon></a>
+        </li>
+        <li>
+            <a href="#"> <box-icon name='gmail' type='logo' color="yellow"></box-icon></>
+        </li>
+        <li>
+            <a href="#"> <box-icon type='logo' name='youtube' color="yellow"></box-icon></a>
+        </li>
+        <li>
+            <a href="#"> <box-icon name='instagram-alt' type='logo' color="yellow"></box-icon></a>
+        </li>
+        <li>
+            <a href="mailto:wronowyadam@gmail.com"><img src="../src/img/icons/CORVUS.png" alt="" class="corvus-logo"></a>
+        </li>
+    </ul>
+
+
+</footer>
 
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-icon-box">
-            <ul class="boxicon-list">
-                <li>
-                    <a href="#"><box-icon type='logo' name='facebook-circle' color="green"></box-icon></a>
-                </li>
-                <li>
-                    <a href="#"><box-icon name='linkedin-square' type='logo' color="green"></box-icon></a>
-                </li>
-                <li>
-                    <a href="#"> <box-icon name='gmail' type='logo' color="green"></box-icon></>
-                </li>
-                <li>
-                    <a href="#"> <box-icon type='logo' name='youtube' color="green"></box-icon></a>
-                </li>
-                <li>
-                    <a href="#"> <box-icon name='instagram-alt' type='logo' color="green"></box-icon></a>
-                </li>
-                <li>
-                    <a href="#"></a><img src="../src/img/icons/CORVUS.png" alt="" class="corvus-logo"></a>
-                </li>
-            </ul>
-        </div>
 
-    </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
