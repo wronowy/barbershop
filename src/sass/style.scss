@@ -29,7 +29,7 @@ header {
 	display: flex;
 	height: 100vh;
 	width: 100%;
-	background-image: url('../dist/img/barber-big.jpg');
+	background-image: url('./dist/img/barber-big.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -290,7 +290,7 @@ h1,
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: url('../dist/img/barbershop-4762345_1280.jpg');
+	background-image: url('./dist/img/barbershop-4762345_1280.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -339,10 +339,10 @@ h1,
 	box-shadow: 6px 6px 10px rgba(232, 127, 7, 0.8);
 }
 .one {
-	background-image: url('../dist/img/man-6692571_1280.jpg');
+	background-image: url('./dist/img/man-6692571_1280.jpg');
 }
 .two {
-	background-image: url('../dist/img/beard-4136705_1280.jpg');
+	background-image: url('./dist/img/beard-4136705_1280.jpg');
 }
 button.question {
 	position: absolute;
@@ -398,7 +398,7 @@ h3 {
 	height: 100vh;
 }
 #offers {
-	background-image: url('../dist/img/barber2.jpg');
+	background-image: url('./dist/img/barber2.jpg');
 	background-position: center;
 	background-size: cover;
 }
@@ -411,16 +411,16 @@ h3 {
 	gap: 30px;
 }
 .first .offer-bg {
-	background-image: url('../dist/img/barber-2507764_640.jpg');
+	background-image: url('./dist/img/barber-2507764_640.jpg');
 }
 .second .offer-bg {
-	background-image: url('../dist/img/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg');
+	background-image: url('./dist/img/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg');
 }
 .third .offer-bg {
-	background-image: url('../dist/img/gustavo-ferreira-mGMWpkCdTuU-unsplash.jpg');
+	background-image: url('./dist/img/gustavo-ferreira-mGMWpkCdTuU-unsplash.jpg');
 }
 .fourth .offer-bg {
-	background-image: url('../dist/img/clay-banks-k-vs3m7UzcE-unsplash.jpg');
+	background-image: url('./dist/img/clay-banks-k-vs3m7UzcE-unsplash.jpg');
 }
 .offer {
 	position: relative;
@@ -486,7 +486,7 @@ h3 {
 
 // contact
 #contact {
-	background-image: url('../dist/img/barber-1017457_1920.jpg');
+	background-image: url('./dist/img/barber-1017457_1920.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
