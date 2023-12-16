@@ -76,11 +76,27 @@ header {
 	display: none;
 	position: absolute;
 	top: 3rem;
-	width: 5rem;
+	width: 3.5rem;
 	left: 1rem;
 }
 .menu-hamburger {
+	transition: transform 0.4s;
+}
+.menu-hamburger:hover {
+	animation: myAnim 2s ease 0s 1 normal forwards;
+	border-radius: 50%;
 	cursor: pointer;
+}
+@keyframes myAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(250, 248, 248, 0.35);
+		transform: scale(1.1);
+	}
 }
 .mobile-menu {
 	text-align: center;
@@ -101,7 +117,28 @@ header {
 	border: 0;
 }
 // media
-
+@media (max-width: 580px) {
+	h1.title-mobile {
+		font-size: 3rem;
+	}
+	p.owners-info {
+		font-size: 1rem;
+	}
+	.cards {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		.card {
+			.card {
+				max-width: 2rem;
+				max-height: 2rem;
+			}
+		}
+	}
+}
 @media (max-width: 768px) {
 	.navbar .nav-links ul {
 		flex-direction: column;
@@ -111,26 +148,22 @@ header {
 		width: 10rem;
 		height: 10rem;
 	}
-
+	h2.head-title {font-size: 3rem;}
 	.titlebox {
 		font-size: 2rem;
 	}
 	.cards {
 		display: flex;
-		flex-direction: column;
+
 		justify-content: center;
 		align-items: center;
+		.card-text {
+			font-size: 0.8rem;
+		}
 	}
 	.card {
 		max-width: 16rem;
-		max-height: 12rem;
-	}
-	.card-text {
-		font-size: 0.8rem;
-
-		h3 {
-			font-size: 1rem;
-		}
+		max-height: 20rem;
 	}
 	.hero-img,
 	.contact-form-box {
@@ -279,7 +312,7 @@ h1,
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	margin-top: 8rem;
+	margin-top: 2rem;
 	font-weight: 400;
 	text-shadow: 1px 2px 4px #000000;
 }
@@ -316,7 +349,7 @@ h1,
 	text-align: center;
 
 	font-size: 1.4rem;
-	color: var(--firstcolor);
+	color: var(--txtcolor);
 	text-shadow: 1px 10px 23px rgba(0, 0, 0, 0.62);
 }
 
@@ -377,8 +410,8 @@ button.question:hover ~ .card-text {
 	clip-path: circle(0 at 50% 90%);
 	transition: clip-path 0.8s;
 }
-h3 {
-	color: var(--firstcolor);
+.card-text h3 {
+	color: var(--title);
 	text-transform: uppercase;
 	text-shadow: 1px 1px 9px #000000;
 }
@@ -407,6 +440,8 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	max-width: 800px;
+	align-items: center;
+
 	margin: auto;
 	gap: 30px;
 }
@@ -465,8 +500,8 @@ h3 {
 	background-color: rgba(129, 96, 96, 0.229);
 	padding: 5px 10px;
 	border-radius: 5px;
-	color: var(--txtcolor);
-	text-shadow: 1px 3px 3px #000000;
+	color:red;
+	text-shadow: 1px 1px 3px #000000;
 }
 .offer:hover h3 {
 	display: none;
@@ -500,9 +535,10 @@ h3 {
 
 .down-title {
 	font-size: 2.6rem;
-	color: var(--DarkWhiteBcg);
+	color: var(--activelink);
 	margin-top: 1rem;
-	text-shadow: 1px 2px 4px #ffffff;
+	text-shadow: 1px 2px 4px #060606;
+	text-align: center;
 }
 .contact-container {
 	display: flex;
@@ -531,8 +567,9 @@ h3 {
 	flex-direction: column;
 }
 .contact-form label {
-	color: var(--activelink);
+	color: var(--txtcolor);
 	font-size: 1.2rem;
+	text-shadow: var(--shadow);
 }
 .contact-form input,
 .contact-form textarea,
@@ -615,7 +652,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	height: .1rem;
+	height: 0.1rem;
 	width: 100%;
 	list-style: none;
 	border-radius: 1rem;
@@ -628,4 +665,5 @@ footer {
 img.corvus-logo {
 	width: 2rem;
 	height: 2rem;
+	border-radius: 50%;
 }
