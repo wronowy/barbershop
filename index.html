@@ -49,46 +49,40 @@
             <div class="hero-img">
                 <div class="hero-shadow"></div>
 
-                <div class="icon-up">
-                    <h2 class="head-title">
-                        O nas
-                    </h2>
-                    <div class="owners-info">
-                        <p class="owners-info">
-                            Dwóch przyjaciół, połączonych wspólną pasją, prowadzi tętniący życiem salon fryzjerski, w
-                            którym ich rzemiosło przekształca strzyżenie w niezapomniane przeżycia.</p>
-                    </div>
-                    <div class="cards">
-
-                        <div class="card one">
-                            <button class="question"><i class='bx bx-question-mark'></i></button>
-                            <div class="card-text">
-
-                                <h3>co-owner</h3>
-                                <p class="name">Jan Polak</p>
-                                <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
-                                    cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
-                                    voluptatibus?</p>
-                            </div>
-                        </div>
-
-                        <div class="card two">
-                            <button class="question"><i class='bx bx-question-mark'></i></button>
-                            <div class="card-text">
-
-                                <h3>co-owner</h3>
-                                <p class="name">Piotr Nowak</p>
-                                <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
-                                    cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
-                                    voluptatibus?</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <h2 class="head-title">
+                    O nas
+                </h2>
+                <div class="owners-info">
+                    <p class="owners-info-text">
+                        Dwóch przyjaciół, połączonych wspólną pasją, prowadzi tętniący życiem salon fryzjerski, w
+                        którym ich rzemiosło przekształca strzyżenie w niezapomniane przeżycia.</p>
                 </div>
+
+                <div class="card"> <button class="question"><i class='bx bx-question-mark'></i></button>
+                    <div class="card-one owner"></div>
+                    <div class="description">
+                        <h3>co-owner</h3>
+                        <p class="name">Jan Polak</p>
+                        <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
+                            cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
+                            voluptatibus?</p>
+                    </div>
+                </div>
+
+                <div class="card"><button class="question"><i class='bx bx-question-mark'></i></button>
+                    <div class="card-two owner"></div>
+                    <div class="description">
+                        <h3>co-owner</h3>
+                        <p class="name">Jan Polak</p>
+                        <p class="owner-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eaque
+                            cumque nam ullam dignissimos! Quaerat eaque exercitationem ducimus illum
+                            voluptatibus?</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
+
         <section id="offers">
             <h2 class="head-title">Oferty</h2>
             <div class="offers-container">
@@ -97,7 +91,7 @@
                     <div class="offer-bg"></div>
                     <div class="offer-content">
 
-                        <h3>Trymowanie Brody</h3>
+                        <h3 class="mobile-title">Trymowanie Brody</h3>
                         <p>
                             Nasze doświadczone ekipy barberów specjalizują się w profesjonalnym trymowaniu brody.
                             Oferujemy
@@ -114,7 +108,7 @@
 
                     <div class="offer-bg"></div>
                     <div class="offer-content">
-                        <h3>Golenie Twarzy i Głowy Brzytwą</h3>
+                        <h3 class="mobile-title">Golenie Twarzy i Głowy Brzytwą</h3>
                         <p>
                             Pozwól nam zadbać o Twój wygląd poprzez tradycyjne golenie twarzy i głowy przy użyciu ostrej
                             brzytwy. Nasze
@@ -128,7 +122,7 @@
 
                     <div class="offer-bg"></div>
                     <div class="offer-content">
-                        <h3>Relaks przy Wydarzeniach Sportowych</h3>
+                        <h3 class="mobile-title">Relaks przy Wydarzeniach Sportowych</h3>
                         <p>
                             Obejrzyj swoje ulubione wydarzenia sportowe na naszych telewizorach o najwyższej jakości.
                             Zapewniamy
@@ -142,7 +136,7 @@
 
                     <div class="offer-bg"></div>
                     <div class="offer-content">
-                        <h3>Degustacja Whisky i Piwa</h3>
+                        <h3 class="mobile-title">Degustacja Whisky i Piwa</h3>
                         <p>
                             Przyjdź i skosztuj różnych rodzajów whisky oraz zimnego piwa. Nasze menu obejmuje wyjątkowe
                             marki,
@@ -159,7 +153,7 @@
         <section id="contact">
 
             <div class="contact-content">
-                <p class="down-title">Znajdź nas:</p>
+                <h2 class="head-title">Znajdź nas</h2>
                 <div class="map">
 
 
@@ -167,7 +161,7 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40067.34592861961!2d15.837652948632808!3d51.12305060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f17b9a82193ab%3A0x91542e554198f23b!2sPablo%20Barber%20Shop!5e0!3m2!1spl!2spl!4v1701680497575!5m2!1spl!2spl"
                         loading="lazy"></iframe>
                 </div>
-                <p class="down-title">Umów się:</p>
+                <h2 class="head-title">Umów się</h2>
                 <div class="contact-form-box">
                     <form action="mail.php" method="post" class="contact-form">
                         <div class="contact-box">
@@ -185,11 +179,16 @@
                         <button class="send">Send</button>
                     </form>
                 </div>
-
+                
                 <p class="msg-status"></p>
-
+                
             </div>
-            <footer class="footer">
+            
+        </section>
+    </main>
+    
+    
+    <footer class="footer">
 
     <ul class="boxicon-list">
         <li>
@@ -210,15 +209,11 @@
         <li>
             <a href="mailto:wronowyadam@gmail.com"><img src="../dist/img/logo.jpg" alt="" class="corvus-logo"></a>
         </li>
+       
     </ul>
 
 
 </footer>
-
-        </section>
-    </main>
-
-
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <script src="./dist/js/script.min.js"></script>
