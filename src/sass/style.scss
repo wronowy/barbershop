@@ -8,7 +8,7 @@
 	--bgcolor: radial-gradient(circle, hsla(39, 44%, 70%, 1) 0%, hsla(28, 95%, 71%, 1) 96%);
 	--darkcolor: rgb(8, 7, 7);
 	--txtcolor: #d28663;
-	--firstcolor: #1c8602;
+	--firstcolor: #2cbe07;
 	--linkcolor: rgba(255, 255, 255, 0.455);
 	--shadowcolor: rgba(21, 21, 21, 0.266);
 	--activelink: rgb(255, 0, 0);
@@ -654,9 +654,9 @@ p.owners-info-text {
 	flex-direction: column;
 }
 .contact-form label {
-	color: var(--txtcolor);
+	color: var(--firstcolor);
 	font-size: 1.2rem;
-	text-shadow: var(--shadow);
+	text-shadow: 1px 2px 4px #000000;
 }
 .contact-form input,
 .contact-form textarea,
